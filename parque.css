@@ -1,0 +1,229 @@
+body, ul{
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+a:hover{
+    color: #79e85d;
+}
+
+hr{
+    width: 90%;
+    border-color: black;
+}
+
+/*------------------------------header-------------------------------*/
+#logo{
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+    margin-top: 4px;
+}
+
+#header{
+    box-sizing: border-box;
+    margin-left: -10px;
+    margin-top: -30px;
+    width: 100%;
+    height: 130px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+    margin-top: 21px;
+}
+
+#menu a{
+    display: block;
+    padding: .5rem;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: white;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid #79e85d;
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem .1rem;
+        font-size: .1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #hamburguer{
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburguer::after  ,#hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    nav.active #hamburguer{
+        border-top-color: transparent;   
+    }
+
+    nav.active #hamburguer::before{
+        transform: rotate(135deg);   
+    }
+
+    nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+/*-----------------------------Footer----------------------------------*/
+footer{
+    position: absolute;
+	background-color: rgb(25, 25, 25);
+    margin-left: 0%;
+	width: 100%;
+    height: 440px;
+}
+
+#footerBlocos{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem 3rem;
+}
+
+#divFooterBloco{
+    display: block;
+    white-space: pre-line;
+}
+
+#pfooterTitle{
+    font: normal 16pt sans-serif;
+    color: white;
+}
+
+#aFooter{
+    color: white;
+    font: bold 14pt sans-serif;
+    line-height: 1.6;
+}
+
+#aFooter:hover{
+    color: #79e85d;
+    font: bold 14pt sans-serif;
+    line-height: 1.6;
+}
+
+#divFooterIcon{
+    display: inline-block;
+    margin-top: 1.9rem;
+}
+#icon{
+    color: white;
+    padding-left: 10px;
+}
+
+#icon:hover{
+    color: #79e85d;
+}
+
+#divBloco2{
+    display: inline-block;
+    justify-content: space-between;
+}
+
+#footerLogo{
+    width: 100px;
+    height: 100px;
+    padding: 0.2rem 1.9rem;
+}
+
+#fotterTexto{
+    font: normal 12pt sans-serif;
+    color: white;
+    margin-top: -85px;
+    margin-left: 140px;
+}
+
+/*-----------------------------imagens----------------------------------*/
+img{
+    width: 100%;
+    display: block;
+    height: 630px;
+    margin-top: -1%;
+}
+
+#imgMapa{
+    width: 60%;
+    margin-left: 17%;
+}
+/*-------------------------------mapas------------------------------------*/
+iframe{
+    margin-top: 2%;
+    width: 100%;
+}
+
+/*------------------------------paragrafos------------------------------------*/
+#h1title{
+    margin-top: 3%;
+    text-align: center;
+    font: bold 24pt sans-serif;
+}
+
+#divParque{
+    width: 80%;
+    margin-left: 10%;
+    font: normal 16pt sans-serif;
+}
+
+#mapaTitle{
+    text-align: center;
+    font: bold 16pt sans-serif;
+}

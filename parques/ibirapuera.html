@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="D:\Site\parque.css" media="screen">
+    <link href="D:\Site\fontawesome/css/all.css" rel="stylesheet">
+    <title>Parque Ibirapuera</title>
+</head>
+<body>
+    <header id="header">
+        <img id="logo" src="D:\Site\imagens\logo (1).png">
+        <nav id="nav">
+            <button id="btn-mobile">Menu
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="D:\Site\paginaprincipal.html" ><strong>Página Inicial</strong></a></li>
+                <li><a href="D:\Site\parques.html"><strong>Parques</strong></a></li>
+                <li><a href="D:\Site\exercicios.html"><strong>Exercícios</strong></a></li>
+                <li><a href="D:\Site\aplicativo.html"><strong>Aplicativo</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <img src="D:\Site\imagens\parques\ibirapuera1.jpg" alt="Img 1">
+        </div>
+        <br>
+        <hr>
+        <h1 id="h1title">Parque do ibirapuera</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14626.088560765924!2d-46.67136467801852!3d-23.585600039454707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59e6f06b0f89%3A0x43617829f701baf6!2sIbirapuera%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1634652272251!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br>
+        <br>
+        <hr>
+        <div id="divParque">
+            <p>Parque do Ibirapuera, localizado no centro de São de Paulo, é considerado um dos parques mais bem visitados do Brasil, foi inaugurado em 21 de agosto de 1954, tendo uma área de 1.584.000m². Em 2017, com aproximadamente 14 milhões de visitas, foi o parque mais visitado da América Latina.</p>
+            <p id="mapaTitle">Mapa do parque</p>
+            <img id="imgMapa" src="D:\Site\imagens\parques\ibirapuera-mapa3.jpg">
+        </div>
+        
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+    </main>
+    <footer>
+        <div id="footerBlocos">
+            <div id="divFooterBloco">
+                <p id="pfooterTitle">QL</p>
+                <a id="aFooter" href="D:\Site\paginaprincipal.html">Página Inicial</a>
+                <a id="aFooter" href="D:\Site\parques.html">Parques</a>
+                <a id="aFooter" href="D:\Site\exercicios.html">Exercícios</a>
+                <a id="aFooter" href="D:\Site\exercicios.html">Aplicativo</a>
+            </div>
+            <div id="divFooterBloco">
+                <p id="pfooterTitle">Fale com a gente</p>
+                <a id="aFooter" href="#">(xx)xxxx-xxxx</a>
+                <a id="aFooter" href="#">contato@ql.com</a>
+            </div>
+            <div id="divFooterIcon">
+                <a id="icon" href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a id="icon" href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a id="icon" href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+                <a id="icon" href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+        </div>
+        <div id="divBloco2">
+            <img id="footerLogo" src="D:\Site\imagens\logo preto em branco.jpg">
+            <div id="fotterTexto">
+                <p>© 2021 QL - Quality of life S.A Instituição de tecnologia.<br>
+                Rua Taquari, 546 - Mooca, São Paulo - SP, 03166-000</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const btnMobile = window.document.getElementById('btn-mobile');
+        function toggleMenu(event) {
+            if (event.type === 'touchstart') event.preventDefault()
+            const nav = window.document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+    </script>
+</body>
+</html>
